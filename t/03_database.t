@@ -28,6 +28,7 @@ if ( $schema->resultset('Article')->count() != 0 ) {
 }
 
 my $rs = $schema->resultset( 'Article' );
+my $rsr = $schema->resultset( 'ArticleRevision' );
 
 # Create 3 articles and 3 revisions of each article.
 
@@ -96,17 +97,12 @@ is( $found_2->article_revision->address(), "192.168.1.1" );
 is( $found_2->article_revision->revision(), "2" );
 is( $found_2->live_revision(), "2" );
 
-
-SKIP: {
-    skip "Pulling a specific revision might need some DBIC resultset changes", 5;
-    my $found_2_1 = $rs->find( { uri => '/hello-world', "article_revision.revision" => 1 }, { join => 'article_revision' } );
-    is( $found_2_1->article_revision->content(), "The Random Page" );
-    is( $found_2_1->article_revision->title(), "Random" );
-    is( $found_2_1->article_revision->address(), "127.0.0.1" );
-    is( $found_2_1->article_revision->revision(), "1" );
-    is( $found_2_1->live_revision(), "2" );
-}
-
+my $found_2_1 = $rsr->find( { 'article.uri' => '/random', revision => 1 }, 
+    { join => 'article' } );
+is( $found_2_1->content(), "The Random Page" );
+is( $found_2_1->title(), "Random" );
+is( $found_2_1->address(), "127.0.0.1" );
+is( $found_2_1->revision(), "1" );
 
 # Delete all revisions
 
