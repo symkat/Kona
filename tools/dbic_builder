@@ -1,0 +1,65 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+use local::lib '~/perl5';
+use lib 'lib';
+use lib '../lib'; # In case people run it inside of /tools/
+use DBIx::Class::Schema::Loader qw/ make_schema_at /;
+
+####### Internal Libs ########
+use Site::Config;     # YAML + Conf Validator
+
+# Configutation
+my ( $config_file, $output ) = ( undef, 'lib/' );
+
+while ( my $opt = shift @ARGV  ) {
+    if ( $opt eq '-c' ) {
+        $config_file = shift;
+    } elsif ( $opt eq '-o' ) {
+        $output = shift;
+    } else {
+        help();
+    }
+}
+
+sub help {
+    print "NATS - Not A Tool Kit 1.0\n";
+    print "\t|*| dbic_builder |*|\n\n";
+    print "This tool assists in the creation of DBIx Classes.\n";
+    print "It is indended to be run after changes are made to the PSQL DB.\n";
+    print "\n";
+    print "* Options *\n";
+    print "-c [config file]     || The site's config file\n";
+    print "   Required | Default: None\n\n";
+    print "-o [output_location] || Where the files should be dumped\n";
+    print "   Required | Default: lib/\n\n";
+    exit -1;
+}
+
+
+######## Main Application ########
+
+help unless $config_file;
+help unless -d $output;
+
+my $config = Site::Config->load_config( $config_file );
+print "Using conf=$config_file, out=$output.\n";
+
+make_schema_at("Site::Schema", 
+    { 
+        debug => 1, 
+        components => ["InflateColumn::DateTime"], 
+        dump_directory => $output,
+        naming => 'current',
+    },  
+    [
+        "dbi:Pg:host=" . 
+            $config->{database}->{hostname} . 
+            ";dbname=" . 
+            $config->{database}->{database}, 
+        $config->{database}->{username},
+        $config->{database}->{password},
+    ],
+);
+
+print "Done!\n";

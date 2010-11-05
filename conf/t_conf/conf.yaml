@@ -1,0 +1,5 @@
+database:
+    hostname: "127.0.0.1"
+    database: "wiki_testing"
+    username: "symkat" 
+    password: "symkat"

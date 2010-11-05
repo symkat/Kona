@@ -1,0 +1,14 @@
+        <div class="pagecontent">
+            <div class="content">
+            [% IF errors %]
+            [% FOR error IN errors %]
+            <span style="color: red; font-weight: bold">[% error %]</span>
+            [% END %]
+            [% END %]
+            <form action="/!create" method="post">
+                <input type="hidden" name="uri" value="[% uri %]">
+                Page Title <input id="pagetitle" name="pagetitle" size="90" value="[% title %]"><br>
+                <textarea id="rawcontent" name="rawcontent" rows="25" cols="80">[% content %]</textarea><br>
+                <input type="submit" id="preview" name="preview" value="Create">
+            </form>
+        </div>

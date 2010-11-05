@@ -1,0 +1,9 @@
+database:
+    hostname: "127.0.0.1"
+    database: "wiki_development"
+    username: "symkat" 
+    password: "symkat"
+paths:
+    static_files: /home/symkat/fcgi/wiki/_s
+server:
+    x_send_file: 1

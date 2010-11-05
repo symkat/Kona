@@ -1,0 +1,13 @@
+        <div class="pagecontent">
+            <div class="pageheader">
+                <h1>Article Listing</h1>
+                <div class="clear"></div>
+            </div>
+            <div class="content boxed">
+            [% IF articles %]
+            [% FOR article IN articles %]
+            <a href="[% article.uri %]">[% article.article_revision.title %]</a> <span style="font-size: 0.8em;">Updated: [% article.created %]</span><br>
+            [% END %]
+            [% END %]
+            </div>
+        </div>

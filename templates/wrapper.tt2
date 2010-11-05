@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/page.css">
+    <link rel="stylesheet" href="/theme.css">
+    <title>My Wiki - [% entry.title %]</title>
+</head>
+<body>
+    <div class="titlebar">
+        <div class="title">My Wiki</div>
+        <div class="tagline">Tag line goes here!</div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="page">
+        <div class="navmenu">
+            <div class="boxed">
+                <h1>Article Information</h1>
+                <ul>
+                    <li><a href="/!edit[% entry.uri %]">Edit Article</a></li>
+                </ul>
+            </div>
+            <div class="boxed">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a href="/!articles">Show Article Listing</a></li>
+                </ul>
+            </div>
+            <div class="boxed">
+                <h1>Go To Page</h1>
+                <form action="/!search" method="post"><input type="text" name="search" value=""></form>
+            </div>
+        </div>
+        [% content %]
+    </div>
+</body>
+</html>

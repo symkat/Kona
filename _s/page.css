@@ -1,0 +1,77 @@
+.pagecontent {
+	border-radius: 8px;
+	padding: 10px;
+	margin-left: 12em;
+	margin-right: 0.5em;
+	clear: none;
+}
+
+.titlebar {
+	border-radius: 8px;
+	padding: 10px;
+	margin: 0.25em 0.5em 1em 0.5em;
+	width: auto;
+}
+
+.navmenu {
+	border-radius: 8px;
+	padding: 10px;
+	width: 9.5em;
+	position: absolute;
+	left: 0.5em;
+}
+
+.boxed {
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+.page {
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.pageheader {
+	width: 100%;
+}
+
+.updated {
+	float: left;
+}
+
+.editor {
+	float: right;
+}
+
+ul {
+	list-style: disc;
+	list-style-position: inside;
+}
+
+.title {
+		float: left;
+}
+
+.tagline {
+	width: 100%;
+	text-align: center;
+}
+
+.content {
+	margin-top: 1em;
+	padding: 1em;
+}
+
+.pageheader h1 {
+	margin-bottom: 0.25em;
+}
+
+.navmenu .boxed {
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}

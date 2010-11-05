@@ -1,0 +1,70 @@
+#!/bin/bash
+###################################################################
+#  This has reminded me of how much I don't like bash... this 
+#  should be ported to Perl, or improved, or something.  but it's
+#  good for resetting the DB and I have other concerns to address
+#  before doing anything else with this.
+###################################################################
+
+PG_CREATE=`which createdb`
+PG_DELETE=`which dropdb`
+PG=`which psql`
+TEST_DB_NAME="wiki_testing"
+INSERT_TABLE="conf/sql/schema-1.0.sql"
+OPT=$1
+
+function help {
+    echo -e "NATS - Not A Tool Kit 1.0";
+    echo -e "\t|*| setup_testdb  |*|\n";
+    echo -e "This tool assists in the creation of DBIx Classes.";
+    echo -e "It is indended to be run after changes are made to the PSQL DB.";
+    echo -e "";
+    echo -e "* Options *";
+    echo -e "-c Create testing DB";
+    echo -e "-d Delete testing DB";
+}
+
+if [ -z "$OPT" ];
+then
+    help
+    echo "Error: First option must be -c || -d"
+    exit
+fi
+
+if [ -z "$PG_CREATE" ];
+then
+    help
+    echo "Error: PG_CREATE could not be established (is createdb installed?)"
+    exit
+fi
+
+if [ -z "$PG_DELETE" ];
+then
+    help
+    echo "Error: PG_DELETE could not be established (is dropdb installed?)"
+    exit
+fi
+
+if [ -z "$TEST_DB_NAME" ];
+then
+    help
+    echo "Error: TEST_DB_NAME undefined for some magical reason"
+    exit
+fi
+
+if [ "$OPT" == "-c" ];
+then
+    $PG_DELETE $TEST_DB_NAME
+    $PG_CREATE $TEST_DB_NAME
+    $PG $TEST_DB_NAME < $INSERT_TABLE
+    echo "Created $TEST_DB_NAME"
+    exit
+elif [ "$OPT" == "-d" ];
+then
+    $PG_DELETE $TEST_DB_NAME
+    echo "Deleted $TEST_DB_NAME"
+    exit
+else 
+    help
+    echo ":$OPT: was not recognized"
+fi;

@@ -1,0 +1,34 @@
+body {
+	background-color: #39c;
+}
+
+.title {
+	font-size: 2em;
+	color: #F00000;
+}
+
+.pageheader h1 {
+	font-size: 2.5em;
+}
+
+.pagecontent {
+	background-color: #FFF;
+}
+
+.titlebar {
+	background-color: #EEE;
+}
+
+.navmenu {
+	background-color: #EEE;
+}
+
+.boxed {
+	border-color: #DDD;
+}
+
+.navmenu .boxed {
+	 font-size: 0.8em;
+	 border-color: #333;
+}
+
