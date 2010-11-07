@@ -21,7 +21,7 @@ use_ok( "DateTime::Format::Pg" );
 
 # Templating System ( Template::Toolkit )
 use_ok( "Template" );
-
+use_ok( "Text::Markdown" );
 
 # Application Requirements
 #use_ok( "" );
