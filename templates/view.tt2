@@ -5,5 +5,5 @@
                 <div class="editor">Updated By: [% entry.address %]</div>
                 <div class="clear"></div>
             </div>
-            <div class="content boxed">[% entry.article_revision.content %]</div>
+            <div class="content boxed">[% markdown_content %]</div>
         </div>
