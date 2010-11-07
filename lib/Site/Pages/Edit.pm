@@ -5,6 +5,13 @@ our @ISA = qw/ Exporter /;
 our @EXPORT = qw/ /;
 
 use Site::Utils;
+use Text::MultiMarkdown;
+
+my $m = Text::MultiMarkdown->new(
+    empty_element_suffix => '>',
+    tab_width => 2,
+    use_wikilinks => 1,
+);
 
 my $tt = get_template();
 
@@ -21,7 +28,7 @@ sub handle {
         if ( $entry ) {
             # Serve Entry
             $tt->process( 'edit.tt2', { entry => $entry, rawcontent => $entry->article_revision->content(), 
-                    preview => { content => $entry->article_revision->content() } }, \$content ) || die $tt->error();
+                    preview => { content => $m->markdown($entry->article_revision->content()) } }, \$content ) || die $tt->error();
             $res->body( $content );
             return $res;
         } else {
