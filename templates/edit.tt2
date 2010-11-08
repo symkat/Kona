@@ -1,7 +1,7 @@
         <div class="main mod simpleExt">
           <b class="top"><b class="tl"></b><b class="tr"></b></b>
 	  <div class="inner">
-            <div class="hd">
+            <div class="hd markdown-header">
                 <h1>[% entry.article_revision.title %]</h1>
                 <div class="leftCol">Last Updated On: [% entry.article_revision.updated %]</div>
                 <div class="rightCol">Updated By: [% entry.article_revision.address %]</div>
@@ -9,7 +9,7 @@
             <div class="bd">
               <div class="mod noted comment">
                 <b class="top"><b class="tl"></b><b class="tr"></b></b>
-                <div class="inner">
+                <div class="inner markdown">
                   [% preview.content %]
                 </div>
                 <b class="bottom"><b class="bl"></b><b class="br"></b></b>

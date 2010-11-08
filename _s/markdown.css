@@ -1,28 +1,94 @@
-.pagecontent h1 {
-    font-size: 1.5em;
+
+.markdown-header h1 {
+    font-size: 3em;
     border-bottom: 2px solid black;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
     font-family: 'Crimson Text', arial, serif;
 }
 
-.pagecontent h2 {
+.markdown h1 {
+    font-size: 1.6em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+    font-family: 'Crimson Text', arial, serif;
+}
+
+.markdown h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+    font-family: 'Crimson Text', arial, serif;
+}
+
+.markdown h3 {
+    font-size: 1.4em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+    font-family: 'Crimson Text', arial, serif;
+}
+
+.markdown h4 {
+    font-size: 1.3em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+    font-family: 'Crimson Text', arial, serif;
+}
+
+.markdown h5 {
     font-size: 1.2em;
     border-bottom: 1px solid black;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
+    font-family: 'Crimson Text', arial, serif;
 }
 
-.pagecontent h3 {
-    font-size: 1em;
+.markdown h6 {
+    font-size: 1.1em;
     border-bottom: 1px solid black;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
+    font-family: 'Crimson Text', arial, serif;
 }
 
-p {
+.markdown {
     text-indent: 1em;
     margin-bottom: 1em;
     /* font-family: 'Josefin Sans Std Light', arial, serif; */
+    font-size: 1.15em;
     font-family: 'Crimson Text', arial, serif;
+}
+
+.markdown p {
+    font-size: 1.05em;
+}
+
+.markdown table {
+  	border-width: 0px 1px 1px 0px;
+	border-spacing: 0px;
+	border-style: solid;
+}
+
+.markdown table td {
+        border-width: 1px 0px 0px 1px;
+        border-spacing: 0px;
+        border-style: solid;
+        padding: 0.5em;
+}
+
+.markdown table thead tr th {
+        border-width: 1px 0px 0px 1px;
+        border-spacing: 0px;
+        border-style: solid;
+        padding: 0.5em;
+}
+
+.markdown table caption {
+   text-align: center;
+   font-weight: bold;
+   font-size: 1.2em;
 }
