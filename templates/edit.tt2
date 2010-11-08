@@ -1,8 +1,8 @@
         <div class="pagecontent">
             <div class="pageheader">
                 <h1>[% entry.article_revision.title %]</h1>
-                <div class="updated">Last Updated On: [% entry.created %]</div>
-                <div class="editor">Updated By: [% entry.address %]</div>
+                <div class="updated">Last Updated On: [% entry.article_revision.updated %]</div>
+                <div class="editor">Updated By: [% entry.article_revision.address %]</div>
                 <div class="clear"></div>
             </div>
             <div class="content boxed">[% preview.content %]</div>
