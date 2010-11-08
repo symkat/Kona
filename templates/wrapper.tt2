@@ -10,7 +10,7 @@
     <title>My Wiki - [% entry.title %]</title>
 </head>
 <body>
-    <div class="head mod simpleExt">
+    <div class="head mod noted login">
       <b class="top"><b class="tl"></b><b class="tr"></b></b>
       <div class="inner">
         <div class="hd">
@@ -25,7 +25,7 @@
 
     <div class="body">
         <div class="leftCol">
-            <div class="mod simpleExt" style="margin-top: 0px">
+            <div class="mod talk comment" style="margin-top: 0px">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
               <div class="inner">
                 <div class="hd">
@@ -39,7 +39,7 @@
               </div>
               <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
-            <div class="mod simpleExt">
+            <div class="mod talk comment">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
               <div class="inner">
                 <div class="hd">
@@ -53,7 +53,7 @@
               </div>
               <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
-            <div class="mod simpleExt">
+            <div class="mod talk comment">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
               <div class="inner">
                 <div class="hd">

@@ -1,4 +1,4 @@
-        <div class="main mod simpleExt">
+        <div class="main mod talk comment">
           <b class="top"><b class="tl"></b><b class="tr"></b></b>
           <div class="inner">
             <div class="hd">
@@ -7,7 +7,7 @@
                 <div class="rightCol">Updated By: [% entry.address %]</div>
             </div>
             <div class="bd">
-              <div class="mod talk">
+              <div class="mod noted">
                 <b class="top"><b class="tl"></b><b class="tr"></b></b>
                 <div class="inner">
                   [% markdown_content %]
