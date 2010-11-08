@@ -1,11 +1,21 @@
         <div class="main mod simpleExt">
+          <b class="top"><b class="tl"></b><b class="tr"></b></b>
+	  <div class="inner">
             <div class="line">
                 <h1>[% entry.title %]</h1>
                 <div class="leftCol">Last Updated On: [% entry.created %]</div>
                 <div class="rightCol">Updated By: [% entry.address %]</div>
             </div>
-            <div class="mod noted comment">[% preview.content %]</div>
+            <div class="mod noted comment">
+              <b class="top"><b class="tl"></b><b class="tr"></b></b>
+              <div class="inner">
+                [% preview.content %]
+              </div>
+              <b class="bottom"><b class="bl"></b><b class="br"></b></b>
+            </div>
             <div class="mod noted">  
+              <b class="top"><b class="tl"></b><b class="tr"></b></b>
+              <div class="inner">
                 <form action="/!edit[% entry.uri %]" method="post">
                     <input type="hidden" name="title" value="[% entry.article_revision.title %]">
                     <input type="hidden" name="uri" value="[% entry.uri %]">
@@ -14,5 +24,9 @@
                     <input type="submit" id="update" name="update" value="Update">
                     <input type="submit" id="preview" name="preview" value="Preview">
                 </form>
+              </div>
+              <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
+          </div>
+          <b class="bottom"><b class="bl"></b><b class="br"></b></b>
         </div>

@@ -4,19 +4,23 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="/markdown.css">
     <link rel="stylesheet" href="/all.css">
-    <!--- Google Fonts --->
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light&subset=latin' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Crimson+Text&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light&amp;subset=latin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text&amp;subset=latin' rel='stylesheet' type='text/css'>
     <title>My Wiki - [% entry.title %]</title>
 </head>
 <body>
     <div class="head mod simpleExt">
+      <b class="top"><b class="tl"></b><b class="tr"></b></b>
+      <div class="inner">
         <h1>My Wiki</h1>
         <div class="line">
           <div class="unit size1of3"></div>
           <div class="unit size1of3">Tag line goes here!</div>
           <div class="unit size1of3 lastUnit"></div>
         </div>
+      </div>
+      <b class="bottom"><b class="bl"></b><b class="br"></b></b>
     </div>
 
     <div class="body">

@@ -1,5 +1,6 @@
-        <div class="main">
-            <div class="content">
+        <div class="main mod simpleExt">
+          <b class="top"><b class="tl"></b><b class="tr"></b></b>
+          <div class="inner"> 
             [% IF errors %]
             [% FOR error IN errors %]
             <span style="color: red; font-weight: bold">[% error %]</span>
@@ -11,4 +12,6 @@
                 <textarea id="rawcontent" name="rawcontent" rows="25" cols="80">[% content %]</textarea><br>
                 <input type="submit" id="preview" name="preview" value="Create">
             </form>
+          </div>
+          <b class="bottom"><b class="bl"></b><b class="br"></b></b>
         </div>

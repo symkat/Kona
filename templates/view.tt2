@@ -6,7 +6,7 @@
                 <div class="leftCol">Last Updated On: [% entry.created %]</div>
                 <div class="rightCol">Updated By: [% entry.address %]</div>
             </div>
-            <div class="line mod simpleExt">
+            <div class="mod talk">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
               <div class="inner">
                 [% markdown_content %]
