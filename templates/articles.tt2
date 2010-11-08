@@ -1,4 +1,6 @@
-        <div class="main">
+        <div class="main mod simpleExt">
+          <b class="top"><b class="tl"></b><b class="tr"></b></b>
+          <div class="inner">
             <div class="pageheader">
                 <h1>Article Listing</h1>
                 <div class="clear"></div>
@@ -10,4 +12,6 @@
             [% END %]
             [% END %]
             </div>
+          </div>
+          <b class="bottom"><b class="bl"></b><b class="br"></b></b>
         </div>
