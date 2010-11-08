@@ -13,11 +13,11 @@
     <div class="head mod simpleExt">
       <b class="top"><b class="tl"></b><b class="tr"></b></b>
       <div class="inner">
-        <h1>My Wiki</h1>
-        <div class="line">
-          <div class="unit size1of3"></div>
-          <div class="unit size1of3">Tag line goes here!</div>
-          <div class="unit size1of3 lastUnit"></div>
+        <div class="hd">
+         <h1>My Wiki</h1>
+        </div>
+        <div class="bd">
+          <div class="rightCol">Tag line goes here!</div>
         </div>
       </div>
       <b class="bottom"><b class="bl"></b><b class="br"></b></b>
@@ -28,28 +28,40 @@
             <div class="mod simpleExt" style="margin-top: 0px">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
               <div class="inner">
-                <h1>Article Information</h1>
-                <ul>
+                <div class="hd">
+                  <h3>Article Information</h3>
+                </div>
+                <div class="bd">
+                  <ul>
                     <li><a href="/!edit[% entry.uri %]">Edit Article</a></li>
-                </ul>
+                  </ul>
+                </div>
               </div>
               <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
             <div class="mod simpleExt">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
               <div class="inner">
-                <h1>Quick Links</h1>
-                <ul>
+                <div class="hd">
+                  <h3>Quick Links</h3>
+                </div>
+                <div class="bd">
+                  <ul>
                     <li><a href="/!articles">Show Article Listing</a></li>
-                </ul>
+                  </ul>
+                </div>
               </div>
               <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
             <div class="mod simpleExt">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
               <div class="inner">
-                <h1>Go To Page</h1>
-                <form action="/!search" method="post"><input type="text" name="search" value=""></form>
+                <div class="hd">
+                  <h3>Go To Page</h3>
+                </div>
+                <div class="bd">
+                  <form action="/!search" method="post"><input type="text" name="search" value=""></form>
+                </div>
               </div>
               <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>

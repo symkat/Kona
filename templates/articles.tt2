@@ -1,11 +1,10 @@
         <div class="main mod simpleExt">
           <b class="top"><b class="tl"></b><b class="tr"></b></b>
           <div class="inner">
-            <div class="pageheader">
+            <div class="hd">
                 <h1>Article Listing</h1>
-                <div class="clear"></div>
             </div>
-            <div class="content boxed">
+            <div class="bd">
             [% IF articles %]
             [% FOR article IN articles %]
             <a href="[% article.uri %]">[% article.article_revision.title %]</a> <span style="font-size: 0.8em;">Updated: [% article.created %]</span><br>
