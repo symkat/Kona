@@ -1,0 +1,28 @@
+.pagecontent h1 {
+    font-size: 1.5em;
+    border-bottom: 2px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+    font-family: 'Crimson Text', arial, serif;
+}
+
+.pagecontent h2 {
+    font-size: 1.2em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+}
+
+.pagecontent h3 {
+    font-size: 1em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+}
+
+p {
+    text-indent: 1em;
+    margin-bottom: 1em;
+    /* font-family: 'Josefin Sans Std Light', arial, serif; */
+    font-family: 'Crimson Text', arial, serif;
+}
