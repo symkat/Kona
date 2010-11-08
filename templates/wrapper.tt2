@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="/markdown.css">
-    <link rel="stylesheet" href="/oocss/all.css">
+    <link rel="stylesheet" href="/all.css">
     <!--- Google Fonts --->
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light&subset=latin' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Crimson+Text&subset=latin' rel='stylesheet' type='text/css'>
@@ -22,20 +22,32 @@
     <div class="body">
         <div class="leftCol">
             <div class="mod simpleExt" style="margin-top: 0px">
+              <b class="top"><b class="tl"></b><b class="tr"></b></b>
+              <div class="inner">
                 <h1>Article Information</h1>
                 <ul>
                     <li><a href="/!edit[% entry.uri %]">Edit Article</a></li>
                 </ul>
+              </div>
+              <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
             <div class="mod simpleExt">
+              <b class="top"><b class="tl"></b><b class="tr"></b></b>
+              <div class="inner">
                 <h1>Quick Links</h1>
                 <ul>
                     <li><a href="/!articles">Show Article Listing</a></li>
                 </ul>
+              </div>
+              <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
             <div class="mod simpleExt">
+              <b class="top"><b class="tl"></b><b class="tr"></b></b>
+              <div class="inner">
                 <h1>Go To Page</h1>
                 <form action="/!search" method="post"><input type="text" name="search" value=""></form>
+              </div>
+              <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
         </div>
         [% content %]
