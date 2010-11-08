@@ -3,8 +3,8 @@
 	  <div class="inner">
             <div class="hd">
                 <h1>[% entry.article_revision.title %]</h1>
-                <div class="leftCol">Last Updated On: [% entry.created %]</div>
-                <div class="rightCol">Updated By: [% entry.address %]</div>
+                <div class="leftCol">Last Updated On: [% entry.article_revision.updated %]</div>
+                <div class="rightCol">Updated By: [% entry.article_revision.address %]</div>
             </div>
             <div class="bd">
               <div class="mod noted comment">
