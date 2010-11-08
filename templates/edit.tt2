@@ -2,7 +2,7 @@
           <b class="top"><b class="tl"></b><b class="tr"></b></b>
 	  <div class="inner">
             <div class="hd">
-                <h1>[% entry.title %]</h1>
+                <h1>[% entry.article_revision.title %]</h1>
                 <div class="leftCol">Last Updated On: [% entry.created %]</div>
                 <div class="rightCol">Updated By: [% entry.address %]</div>
             </div>
