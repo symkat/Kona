@@ -1,17 +1,19 @@
         <div class="main mod simpleExt">
           <b class="top"><b class="tl"></b><b class="tr"></b></b>
           <div class="inner">
-            <div class="line">
+            <div class="hd">
                 <h1>[% entry.article_revision.title %]</h1>
                 <div class="leftCol">Last Updated On: [% entry.created %]</div>
                 <div class="rightCol">Updated By: [% entry.address %]</div>
             </div>
-            <div class="mod talk">
-              <b class="top"><b class="tl"></b><b class="tr"></b></b>
-              <div class="inner">
-                [% markdown_content %]
+            <div class="bd">
+              <div class="mod talk">
+                <b class="top"><b class="tl"></b><b class="tr"></b></b>
+                <div class="inner">
+                  [% markdown_content %]
+                </div>
+                <b class="bottom"><b class="bl"></b><b class="br"></b></b>
               </div>
-              <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
           </div>
           <b class="bottom"><b class="bl"></b><b class="br"></b></b>

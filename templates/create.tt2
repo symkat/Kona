@@ -1,17 +1,22 @@
         <div class="main mod simpleExt">
           <b class="top"><b class="tl"></b><b class="tr"></b></b>
           <div class="inner"> 
-            [% IF errors %]
-            [% FOR error IN errors %]
-            <span style="color: red; font-weight: bold">[% error %]</span>
-            [% END %]
-            [% END %]
-            <form action="/!create" method="post">
+            <div class="hd">
+              <h1>Create a new page</h1>
+            </div>
+            <div class="bd">
+              [% IF errors %]
+              [% FOR error IN errors %]
+              <span style="color: red; font-weight: bold">[% error %]</span>
+              [% END %]
+              [% END %]
+              <form action="/!create" method="post">
                 <input type="hidden" name="uri" value="[% uri %]">
                 Page Title <input id="pagetitle" name="pagetitle" size="90" value="[% title %]"><br>
                 <textarea id="rawcontent" name="rawcontent" rows="25" cols="80">[% content %]</textarea><br>
                 <input type="submit" id="preview" name="preview" value="Create">
-            </form>
+              </form>
+            </div>
           </div>
           <b class="bottom"><b class="bl"></b><b class="br"></b></b>
         </div>
