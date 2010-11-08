@@ -2,37 +2,38 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/page.css">
-    <link rel="stylesheet" href="/theme.css">
     <link rel="stylesheet" href="/markdown.css">
+    <link rel="stylesheet" href="/oocss/all.css">
     <!--- Google Fonts --->
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light&subset=latin' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Crimson+Text&subset=latin' rel='stylesheet' type='text/css'>
     <title>My Wiki - [% entry.title %]</title>
 </head>
 <body>
-    <div class="titlebar">
-        <div class="title">My Wiki</div>
-        <div class="tagline">Tag line goes here!</div>
-        <div class="clear"></div>
+    <div class="head mod simpleExt">
+        <h1>My Wiki</h1>
+        <div class="line">
+          <div class="unit size1of3"></div>
+          <div class="unit size1of3">Tag line goes here!</div>
+          <div class="unit size1of3 lastUnit"></div>
+        </div>
     </div>
 
-    <div class="page">
-        <div class="navmenu">
-            <div class="boxed">
+    <div class="body">
+        <div class="leftCol">
+            <div class="mod simpleExt" style="margin-top: 0px">
                 <h1>Article Information</h1>
                 <ul>
                     <li><a href="/!edit[% entry.uri %]">Edit Article</a></li>
                 </ul>
             </div>
-            <div class="boxed">
+            <div class="mod simpleExt">
                 <h1>Quick Links</h1>
                 <ul>
                     <li><a href="/!articles">Show Article Listing</a></li>
                 </ul>
             </div>
-            <div class="boxed">
+            <div class="mod simpleExt">
                 <h1>Go To Page</h1>
                 <form action="/!search" method="post"><input type="text" name="search" value=""></form>
             </div>

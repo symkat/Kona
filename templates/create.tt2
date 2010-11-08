@@ -1,4 +1,4 @@
-        <div class="pagecontent">
+        <div class="main">
             <div class="content">
             [% IF errors %]
             [% FOR error IN errors %]

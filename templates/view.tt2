@@ -1,9 +1,8 @@
-        <div class="pagecontent">
-            <div class="pageheader">
+        <div class="main mod simpleExt">
+            <div class="line">
                 <h1>[% entry.article_revision.title %]</h1>
-                <div class="updated">Last Updated On: [% entry.created %]</div>
-                <div class="editor">Updated By: [% entry.address %]</div>
-                <div class="clear"></div>
+                <div class="leftCol">Last Updated On: [% entry.created %]</div>
+                <div class="rightCol">Updated By: [% entry.address %]</div>
             </div>
-            <div class="content boxed">[% markdown_content %]</div>
+            <div class="line mod simpleExt">[% markdown_content %]</div>
         </div>
