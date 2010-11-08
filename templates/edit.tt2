@@ -1,6 +1,6 @@
         <div class="pagecontent">
             <div class="pageheader">
-                <h1>[% entry.title %]</h1>
+                <h1>[% entry.article_revision.title %]</h1>
                 <div class="updated">Last Updated On: [% entry.created %]</div>
                 <div class="editor">Updated By: [% entry.address %]</div>
                 <div class="clear"></div>
@@ -8,7 +8,7 @@
             <div class="content boxed">[% preview.content %]</div>
             <div class="content">  
                 <form action="/!edit[% entry.uri %]" method="post">
-                    <input type="hidden" name="title" value="[% entry.title %]">
+                    <input type="hidden" name="title" value="[% entry.article_revision.title %]">
                     <input type="hidden" name="uri" value="[% entry.uri %]">
                     <textarea id="rawcontent" name="rawcontent" rows="25" cols="80">[% rawcontent %]</textarea>
                     <input type="submit" id="update" name="update" value="Update">
