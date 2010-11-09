@@ -4,7 +4,7 @@
     border-bottom: 2px solid black;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
-    font-family: 'Crimson Text', arial, serif;
+    font-family: 'Vollkorn', arial, serif;
 }
 
 .markdown h1 {
@@ -12,7 +12,7 @@
     border-bottom: 1px solid black;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
-    font-family: 'Crimson Text', arial, serif;
+    font-family: 'Vollkorn', arial, serif;
 }
 
 .markdown h2 {
@@ -20,7 +20,7 @@
     border-bottom: 1px solid black;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
-    font-family: 'Crimson Text', arial, serif;
+    font-family: 'Vollkorn', arial, serif;
 }
 
 .markdown h3 {
@@ -28,7 +28,7 @@
     border-bottom: 1px solid black;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
-    font-family: 'Crimson Text', arial, serif;
+    font-family: 'Vollkorn', arial, serif;
 }
 
 .markdown h4 {
@@ -36,7 +36,7 @@
     border-bottom: 1px solid black;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
-    font-family: 'Crimson Text', arial, serif;
+    font-family: 'Vollkorn', arial, serif;
 }
 
 .markdown h5 {
@@ -44,7 +44,7 @@
     border-bottom: 1px solid black;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
-    font-family: 'Crimson Text', arial, serif;
+    font-family: 'Vollkorn', arial, serif;
 }
 
 .markdown h6 {
@@ -52,7 +52,7 @@
     border-bottom: 1px solid black;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
-    font-family: 'Crimson Text', arial, serif;
+    font-family: 'Vollkorn', arial, serif;
 }
 
 .markdown {
@@ -60,7 +60,7 @@
     margin-bottom: 1em;
     /* font-family: 'Josefin Sans Std Light', arial, serif; */
     font-size: 1.15em;
-    font-family: 'Crimson Text', arial, serif;
+    font-family: 'PT Sans', arial, serif;
 }
 
 .markdown p {
@@ -84,11 +84,13 @@
         border-width: 1px 0px 0px 1px;
         border-spacing: 0px;
         border-style: solid;
+        font-weight: bold;
         padding: 0.5em;
 }
 
 .markdown table caption {
    text-align: center;
-   font-weight: bold;
+/*   font-weight: bold; */
+    font-family: 'PT Sans Caption', arial, serif;   
    font-size: 1.2em;
 }

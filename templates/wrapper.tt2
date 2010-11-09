@@ -7,6 +7,9 @@
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light&amp;subset=latin' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Crimson+Text&amp;subset=latin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:italic&amp;subset=latin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption&amp;subset=latin' rel='stylesheet' type='text/css'>
     <title>My Wiki - [% entry.title %]</title>
 </head>
 <body>
