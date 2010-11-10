@@ -1,14 +1,22 @@
     <script src="/jquery-nsm_TOC.js"></script>
     <script>
     $(function() {
-       var toc=$('<div class="toc" id="toc"></div>');
        var md = $('div[class~="markdown"]');
 
        if (md.find("h1").html()) /*check if we have an h1, if not, no TOC for you*/
        {
+         var tocbox=$('<div class="tocbox pad"></div>');
+         var toc=$('<div id="toc"></div>');
+         var hide = $('<div class="tochead">Contents [<a href="#">Hide</a>]</div>');
+         var show = $('<div class="tochead">Contents [<a href="#">Show</a>]</div>');
+
+         var hidefunc = function() { tocbox.html(show); show.click(showfunc); };
+         var showfunc = function() { tocbox.html(hide); tocbox.append(toc); hide.click(hidefunc); };
+
          md.prepend('<div class="clear"></div>');
-         md.prepend(toc);
+         md.prepend(tocbox);
          md.nsm_TOC({append_toc: true, toc_el: toc, hash_prefix: 'head-'});
+         showfunc();
        }
     }); 
     </script>

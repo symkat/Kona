@@ -4,12 +4,16 @@
     background-color: #E2E2E2;
 }
 
-#toc {
+.tocbox {
     border: 1px solid #2550A0;
     width: auto;
     float: left;
     background-color: #F1F1F1;
     margin: 0.5em;
+}
+
+.tochead {
+    text-align: center;
 }
 
 .clear {clear: both;}
