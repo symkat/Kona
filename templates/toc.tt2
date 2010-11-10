@@ -6,6 +6,7 @@
 
        if (md.find("h1").html()) /*check if we have an h1, if not, no TOC for you*/
        {
+         md.prepend('<div class="clear"></div>');
          md.prepend(toc);
          md.nsm_TOC({append_toc: true, toc_el: toc, hash_prefix: 'head-'});
        }
