@@ -34,7 +34,7 @@
         <div class="leftCol">
             <div class="mod talk comment" style="margin-top: 0px">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
-              <div class="inner">
+              <div class="inner pad">
                 <div class="hd">
                   <h3>Article Information</h3>
                 </div>
@@ -48,7 +48,7 @@
             </div>
             <div class="mod talk comment">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
-              <div class="inner">
+              <div class="inner pad">
                 <div class="hd">
                   <h3>Quick Links</h3>
                 </div>
@@ -62,7 +62,7 @@
             </div>
             <div class="mod talk comment">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
-              <div class="inner">
+              <div class="inner pad">
                 <div class="hd">
                   <h3>Go To Page</h3>
                 </div>
