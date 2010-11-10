@@ -1,4 +1,4 @@
-        <div class="main mod talk comment">
+        <div class="main maincontent pad">
           <b class="top"><b class="tl"></b><b class="tr"></b></b>
           <div class="inner">
             <div class="hd markdown-header">
@@ -7,7 +7,7 @@
                 <div class="rightCol">Updated By: [% entry.article_revision.address %]</div>
             </div>
             <div class="bd">
-              <div class="mod noted">
+              <div class="mod pad">
                 <b class="top"><b class="tl"></b><b class="tr"></b></b>
                 <div class="inner markdown">
                   [% markdown_content %]
@@ -18,3 +18,4 @@
           </div>
           <b class="bottom"><b class="bl"></b><b class="br"></b></b>
         </div>
+[% INCLUDE 'toc.tt2' %]

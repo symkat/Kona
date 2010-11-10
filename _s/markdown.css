@@ -56,7 +56,6 @@
 }
 
 .markdown {
-    text-indent: 1em;
     margin-bottom: 1em;
     /* font-family: 'Josefin Sans Std Light', arial, serif; */
     font-size: 1.15em;
@@ -64,6 +63,7 @@
 }
 
 .markdown p {
+    text-indent: 1em;
     font-size: 1.05em;
 }
 
@@ -71,6 +71,7 @@
   	border-width: 0px 1px 1px 0px;
 	border-spacing: 0px;
 	border-style: solid;
+        margin-left: 2em;
 }
 
 .markdown table td {

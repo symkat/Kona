@@ -1,34 +1,13 @@
-body {
-	background-color: #39c;
+.maincontent {
+    border: 1px solid #C7C7C7;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #E2E2E2;
 }
 
-.title {
-	font-size: 2em;
-	color: #F00000;
+#toc {
+    border: 1px solid #2550A0;
+    width: auto;
+    float: left;
+    background-color: #F1F1F1;
+    margin: 0.5em;
 }
-
-.pageheader h1 {
-	font-size: 2.5em;
-}
-
-.pagecontent {
-	background-color: #FFF;
-}
-
-.titlebar {
-	background-color: #EEE;
-}
-
-.navmenu {
-	background-color: #EEE;
-}
-
-.boxed {
-	border-color: #DDD;
-}
-
-.navmenu .boxed {
-	 font-size: 0.8em;
-	 border-color: #333;
-}
-

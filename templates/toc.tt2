@@ -1,0 +1,9 @@
+    <script src="/jquery-nsm_TOC.js"></script>
+    <script>
+    $(function() {
+       var toc=$('<div class="toc" id="toc"></div>');
+       var md = $('div[class~="markdown"]');
+       md.prepend(toc);
+       md.nsm_TOC({append_toc: true, toc_el: toc, hash_prefix: 'head-'});
+    }); 
+    </script>

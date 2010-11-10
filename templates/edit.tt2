@@ -1,4 +1,4 @@
-        <div class="main mod simpleExt">
+        <div class="main maincontent">
           <b class="top"><b class="tl"></b><b class="tr"></b></b>
 	  <div class="inner">
             <div class="hd markdown-header">
@@ -11,6 +11,7 @@
                 <b class="top"><b class="tl"></b><b class="tr"></b></b>
                 <div class="inner markdown">
                   [% preview.content %]
+                  [% INCLUDE 'toc.tt2' %]
                 </div>
                 <b class="bottom"><b class="bl"></b><b class="br"></b></b>
               </div>

@@ -2,8 +2,10 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="/markdown.css">
+    <link rel="stylesheet" href="/theme.css">
     <link rel="stylesheet" href="/all.css">
+    <link rel="stylesheet" href="/markdown.css">
+    <link rel="stylesheet" href="/overrides.css">
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light&amp;subset=latin' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Crimson+Text&amp;subset=latin' rel='stylesheet' type='text/css'>
