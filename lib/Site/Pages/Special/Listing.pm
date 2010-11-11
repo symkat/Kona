@@ -1,5 +1,5 @@
 package Site::Pages::Special::Listing;
-use strict;
+use strictures 1;
 
 use Site::Utils;
 

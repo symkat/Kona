@@ -1,5 +1,5 @@
 package Site::Config;
-use strict;
+use strictures 1;
 use YAML;
 use Carp;
 

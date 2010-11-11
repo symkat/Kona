@@ -1,5 +1,5 @@
 package Site::Pages::Special::Search;
-use strict;
+use strictures 1;
 
 use Site::Utils;
 

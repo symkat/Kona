@@ -1,5 +1,5 @@
 package Site::Pages::Edit;
-use strict;
+use strictures 1;
 
 use Site::Utils;
 use Text::MultiMarkdown;

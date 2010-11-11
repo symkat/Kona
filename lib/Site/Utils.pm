@@ -1,5 +1,5 @@
 package Site::Utils;
-use strict;
+use strictures 1;
 use Template;
 
 require Exporter;

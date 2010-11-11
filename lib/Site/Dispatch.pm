@@ -1,5 +1,5 @@
 package Site::Dispatch;
-use strict;
+use strictures 1;
 use Plack::Request;
 
 sub new {

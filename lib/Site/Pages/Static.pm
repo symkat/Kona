@@ -1,5 +1,5 @@
 package Site::Pages::Static;
-use strict;
+use strictures 1;
 
 use Site::Utils;
 

@@ -1,5 +1,4 @@
 package Site;
-use warnings;
-use strict;
+use strictures 1;
 
 our $heap = { };

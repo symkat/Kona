@@ -1,6 +1,5 @@
 package Plack::Middleware::GuessContentType;
-use strict;
-use warnings;
+use strictures 1;
 use parent qw( Plack::Middleware );
 use File::MMagic;
 use Data::Dumper;

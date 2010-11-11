@@ -23,6 +23,9 @@ use_ok( "DateTime::Format::Pg" );
 use_ok( "Template" );
 use_ok( "Text::MultiMarkdown" );
 
+# Warnings Package
+use_ok( "strictures" );
+
 # Application Requirements
 #use_ok( "" );
 
