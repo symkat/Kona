@@ -29,3 +29,6 @@ h1,h2,h3,h4,h5,h6 {
   border-radius: 6px;
   border: 1px solid #00477A;
 }
+
+html, body {background-color: #ABC; min-height: 100%;}
+
