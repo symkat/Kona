@@ -13,3 +13,20 @@ h1,h2,h3,h4,h5,h6 {
   margin-top: 0.1em;
   margin-bottom: 0.1em;
 }
+
+.headerstyle {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+.pullleft {
+  margin-left:0px;
+}
+
+.grab {
+  border-radius: 6px;
+  border: 1px solid #00477A;
+  background-color: #F0F;
+}

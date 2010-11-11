@@ -17,14 +17,12 @@
     <title>My Wiki - [% entry.title %]</title>
 </head>
 <body>
-    <div class="head mod noted login">
+    <div class="head mod grab login headerstyle">
       <b class="top"><b class="tl"></b><b class="tr"></b></b>
       <div class="inner">
-        <div class="hd">
-         <h1>My Wiki</h1>
-        </div>
         <div class="bd">
-          <div class="rightCol">Tag line goes here!</div>
+          <h1 class="leftCol wikititle">My Wiki</h1>
+          <div class="rightCol tagline"><br/>Tag line goes here!</div>
         </div>
       </div>
       <b class="bottom"><b class="bl"></b><b class="br"></b></b>
@@ -32,7 +30,7 @@
 
     <div class="body">
         <div class="leftCol">
-            <div class="mod talk comment" style="margin-top: 0px">
+            <div class="mod talk comment pullleft" style="margin-top: 0px">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
               <div class="inner pad">
                 <div class="hd">
@@ -46,7 +44,7 @@
               </div>
               <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
-            <div class="mod talk comment">
+            <div class="mod talk comment pullleft">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
               <div class="inner pad">
                 <div class="hd">
@@ -60,7 +58,7 @@
               </div>
               <b class="bottom"><b class="bl"></b><b class="br"></b></b>
             </div>
-            <div class="mod talk comment">
+            <div class="mod talk comment pullleft">
               <b class="top"><b class="tl"></b><b class="tr"></b></b>
               <div class="inner pad">
                 <div class="hd">
