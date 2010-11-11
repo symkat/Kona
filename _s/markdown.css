@@ -87,6 +87,14 @@
    font-family: 'Droid Sans Mono', monospace;
 }
 
+.markdown p code {
+   background-color: #E2E2E2;
+   border: none;
+   display: inline;
+   padding: 0px;
+   margin: 0px;
+}
+
 .markdown blockquote {
    background-color: #EAEAEA;
    border: 1px solid black;
