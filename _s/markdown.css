@@ -115,3 +115,10 @@
 }
 
 .markdown ol p, .markdown ul p {text-indent: 0px; margin-left: 0px;}
+
+.markdown a {
+   text-decoration: underline;
+}
+
+.markdown h1 a, .markdown h2 a, .markdown h3 a, .markdown h4 a, .markdown h5 a, .markdown h6 a, #toc a {text-decoration: none;}
+#toc a:hover {text-decoration: underline}
