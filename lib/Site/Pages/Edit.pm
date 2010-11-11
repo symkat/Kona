@@ -1,8 +1,5 @@
 package Site::Pages::Edit;
 use strict;
-require Exporter;
-our @ISA = qw/ Exporter /;
-our @EXPORT = qw/ /;
 
 use Site::Utils;
 use Text::MultiMarkdown;
@@ -70,9 +67,7 @@ sub handle {
         return $res;
     }
     
-    $res->status(405);
-    $res->body( "Method Not Allowed" );
-    return $res;
+    return http_method_not_allowed( $res );
 }
 
 1;

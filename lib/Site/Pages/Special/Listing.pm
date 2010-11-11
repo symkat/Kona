@@ -1,8 +1,5 @@
 package Site::Pages::Special::Listing;
 use strict;
-require Exporter;
-our @ISA = qw/ Exporter /;
-our @EXPORT = qw/ /;
 
 use Site::Utils;
 
@@ -24,7 +21,5 @@ sub handle {
         }
     }
 
-    $res->status(405);
-    $res->body( "Method Not Allowed" );
-    return $res;
+    return http_method_not_allowed( $res );
 }

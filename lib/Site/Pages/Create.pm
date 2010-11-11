@@ -1,8 +1,5 @@
 package Site::Pages::Create;
 use strict;
-require Exporter;
-our @ISA = qw/ Exporter /;
-our @EXPORT = qw/ /;
 
 use Site::Utils;
 
@@ -36,14 +33,10 @@ sub handle {
         my $entry = $rs->create( { uri => $path, article_revisions => [ { content => $content, title => $title, address => $req->address(), revision => 1 } ] } );
         $entry->live_revision( 1 );
         $entry->update();
-        # Store the new article.
-        #$Site::heap{'schema'}->resultset('Article')->create( { uri => $path, title => $title, content => $content, address => $req->address() } );
         
         $res->redirect( $path );
         return $res;
     }
     
-    $res->status(405);
-    $res->body( "Method Not Allowed" );
-    return $res;
+    return http_method_not_allowed( $res );
 }

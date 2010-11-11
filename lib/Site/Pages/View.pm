@@ -1,8 +1,6 @@
 package Site::Pages::View;
 use strict;
-require Exporter;
-our @ISA = qw/ Exporter /;
-our @EXPORT = qw/ /;
+
 use Site::Utils;
 use Text::MultiMarkdown;
 
