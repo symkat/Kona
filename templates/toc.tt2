@@ -17,6 +17,11 @@
          md.prepend(tocbox);
          md.nsm_TOC({append_toc: true, toc_el: toc, hash_prefix: 'head-'});
          showfunc();
+
+         if (document.location.hash) {
+            var elem = $('[id="'+document.location.hash.substring(1)+'"]');
+            $('html,body').scrollTop(elem.offset().top);
+         }
        }
     }); 
     </script>
