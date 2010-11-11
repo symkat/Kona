@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .headerstyle {
-  width: 100%;
+  width: auto;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
@@ -31,4 +31,3 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 html, body {background-color: #ABC; min-height: 100%;}
-
