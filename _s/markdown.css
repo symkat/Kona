@@ -30,7 +30,7 @@
 }
 
 .markdown h5 {
-    font-size: 1.2em;
+-    font-size: 1.2em;
 }
 
 .markdown h6 {
@@ -76,4 +76,32 @@
 /*   font-weight: bold; */
     font-family: 'PT Sans Caption', arial, serif;   
    font-size: 1.2em;
+}
+
+.markdown code {
+   background-color: #EAEAEA;
+   border: 1px solid #0B8C8F;
+   display: block;
+   padding: 1em;
+   margin: 0.2em;
+   font-family: 'Droid Sans Mono', monospace;
+}
+
+.markdown blockquote {
+   background-color: #EAEAEA;
+   border: 1px solid black;
+}
+
+.markdown ul {
+   margin-left: 2em;
+   list-style-type: disc;
+}
+
+.markdown ul li {
+   list-style-type: disc;
+}
+
+.markdown ol li {
+   margin-left: 2em;
+   list-style-type: decimal;
 }
