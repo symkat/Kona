@@ -1,6 +1,5 @@
 #!/usr/bin/perl
-use warnings;
-use strict;
+use strictures 1;
 use local::lib '~/perl5';
 use lib 'lib';
 use Test::More;

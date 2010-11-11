@@ -1,6 +1,5 @@
 #!/usr/bin/perl
-use warnings;
-use strict;
+use strictures 1;
 use Test::More;
 
 # Plack Requirements
@@ -25,6 +24,7 @@ use_ok( "Text::MultiMarkdown" );
 
 # Warnings Package
 use_ok( "strictures" );
+use_ok( "indirect" );
 
 # Application Requirements
 #use_ok( "" );
