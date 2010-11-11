@@ -34,4 +34,5 @@ html, body {background-color: #ABC; min-height: 100%;}
 
 #toc ul, #toc ul li {
    list-style-type: none;
+   margin-left: 0.5em;
 }
