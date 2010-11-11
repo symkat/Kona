@@ -120,5 +120,10 @@
    text-decoration: underline;
 }
 
+.markdown .footnotes {font-size: 0.75em;}
+.markdown .bibliography hr {border: 1px solid black;}
+.markdown .bibliography .item {font-style: italic;}
+
+/*overrides, always at bottom*/
 .markdown h1 a, .markdown h2 a, .markdown h3 a, .markdown h4 a, .markdown h5 a, .markdown h6 a, #toc a {text-decoration: none;}
 #toc a:hover {text-decoration: underline}
