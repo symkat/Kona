@@ -105,3 +105,5 @@
    margin-left: 2em;
    list-style-type: decimal;
 }
+
+.markdown ol p, .markdown ul p {text-indent: 0px; margin-left: 0px;}
