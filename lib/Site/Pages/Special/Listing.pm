@@ -1,25 +1,13 @@
 package Site::Pages::Special::Listing;
 use strictures 1;
+use base qw/ Site::Pages /;
 
-use Site::Utils;
-
-my $tt = get_template();
-
-sub handle {
-    my ( $req ) = @_;
-    my ( $res, $con, $uri ) = get_request_info( $req );
-    my $content;
-
-    if ( $con eq 'GET' ) {
-        # Handle Get
-       
-        my ( @articles ) = $Site::heap{'schema'}->resultset('Article')->all();
-        if ( @articles ) {
-            $tt->process( 'articles.tt2', { articles => \@articles }, \$content ) || die $tt->error();
-            $res->body( $content );
-            return $res;
-        }
-    }
-
-    return http_method_not_allowed( $res );
+sub handle_GET {
+    my ( $self ) = @_;
+    
+    my ( @articles ) = $self->schema->resultset('Article')->all();
+    if ( @articles ) {
+        return $self->render_page( $self->res, 'articles.tt2', { articles => \@articles } );
+    } # TODO: Handle case of no articles to display.
 }
+1;
