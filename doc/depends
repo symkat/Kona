@@ -1,2 +1,0 @@
-Debian packages: libpq-dev libnet-ssleay-perl
-CPAN Packages: See t/01_use_ok.t

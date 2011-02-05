@@ -1,34 +1,22 @@
 package Site::Pages::View;
 use strictures 1;
-
-use Site::Utils;
 use Text::MultiMarkdown;
+use base qw/ Site::Pages /;
 
-my $m = Text::MultiMarkdown->new(
-    empty_element_suffix => '>',
+my $m = Text::MultiMarkdown->new( 
+    empty_element_suffix => '>', 
     tab_width => 2,
     use_wikilinks => 1,
 );
 
-my $tt = get_template();
+sub handle_GET {
+    my ( $self ) = @_;
 
-sub handle {
-    my ( $req ) = @_;
-    my ( $res, $con, $uri ) = get_request_info( $req );
-    my $content;
-
-    if ( $con eq 'GET' ) {
-        my $entry = $Site::heap{'schema'}->resultset('Article')->find( { uri => $uri }, { prefetch => 'article_revision' } );
-        if ( $entry ) {
-            my $html = $m->markdown( $entry->article_revision->content() );
-            $tt->process( 'view.tt2', { entry => $entry, markdown_content => $html }, \$content ) || die $tt->error();
-            $res->body( $content );
-            return $res;
-        } else {
-            $tt->process( 'create.tt2', { uri => $uri }, \$content ) || die $tt->error();
-            $res->body( $content );
-            return $res;
-        }
+    my $entry = $self->schema->resultset('Article')->find( { uri => $self->req->path }, { prefetch => 'article_revision' } );
+    
+    unless ( $entry ) {
+        return $self->render_page( $self->res, 'create.tt2', { uri => $self->req->path } );
     }
-    return http_method_not_allowed( $res );
+    my $html = $m->markdown( $entry->article_revision->content() );
+    return $self->render_page( $self->res, 'view.tt2', { entry => $entry, markdown_content => $html } );
 }

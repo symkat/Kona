@@ -1,19 +1,11 @@
 package Site::Pages::Special::Search;
 use strictures 1;
-
-use Site::Utils;
+use base qw/ Site::Pages /;
 
 # Let's play pretend...
 
-sub handle {
-    my ( $req ) = @_;
-    my ( $res, $con, $uri ) = get_request_info( $req );
-
-    if ( $con eq 'POST' ) {
-        $res->redirect( "/" . $req->param( "search" ) ); 
-        return $res;
-    }
-
-    return http_method_not_allowed( $res );
+sub handle_POST {
+    my ( $self ) = @_;
+    return $self->redirect( '/' . $self->req->param( "search" ));
 }
 1;

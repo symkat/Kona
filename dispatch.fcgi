@@ -14,6 +14,7 @@ use Site;           # Heap + General Stuff
 use Site::Dispatch; # Custom Dispatch Table Loader
 use Site::Schema;   # DBIC
 use Site::Config;   # YAML + Conf Validator
+use Site::Pages;
 
 ## Page Handlers ##
 use Site::Pages::View;
@@ -39,14 +40,14 @@ $Site::heap{'config'} = $config;
 
 my $app = Site::Dispatch->new( 
     [
-        { url => qr/^\/$/,                      call => \&Site::Pages::View::handle   },
-        { url => qr/^\/[a-zA-Z0-9_-]+$/,        call => \&Site::Pages::View::handle   },
-        { url => qr/^\/!edit\/$/,               call => \&Site::Pages::Edit::handle   },
-        { url => qr/^\/!edit\/[a-zA-Z0-9_-]+$/, call => \&Site::Pages::Edit::handle   },
-        { url => qr/^\/!create$/,               call => \&Site::Pages::Create::handle },
-        { url => qr/^\/!articles$/,             call => \&Site::Pages::Special::Listing::handle },
-        { url => qr/^\/!search$/,               call => \&Site::Pages::Special::Search::handle },
-        { url => qr/^.*$/,                      call => \&Site::Pages::Static::handle, test => \&Site::Pages::Static::can_send },
+        { url => qr/^\/$/,                      call => \&Site::Pages::View::handle, package => "Site::Pages::View"  },
+        { url => qr/^\/[a-zA-Z0-9_-]+$/,        call => \&Site::Pages::View::handle, package => "Site::Pages::View"  },
+        { url => qr/^\/!edit\/$/,               call => \&Site::Pages::Edit::handle, package => "Site::Pages::Edit"  },
+        { url => qr/^\/!edit\/[a-zA-Z0-9_-]+$/, call => \&Site::Pages::Edit::handle, package => "Site::Pages::Edit"  },
+        { url => qr/^\/!create$/,               call => \&Site::Pages::Create::handle, package => "Site::Pages::Create" },
+        { url => qr/^\/!articles$/,             call => \&Site::Pages::Special::Listing::handle, package => "Site::Pages::Special::Listing" },
+        { url => qr/^\/!search$/,               call => \&Site::Pages::Special::Search::handle,  package => "Site::Pages::Special::Search" },
+        { url => qr/^.*$/,                      call => \&Site::Pages::Static::handle, package => "Site::Pages::Static", test => \&Site::Pages::Static::can_send },
     ],
 );
 
