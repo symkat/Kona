@@ -2,11 +2,11 @@
     <script>
     $(function() {
        var md = $('div[class~="markdown"]');
+       var toc = md.find("toc");
 
-       if (md.find("h1").html()) /*check if we have an h1, if not, no TOC for you*/
+       if (toc.html()) /*check if we have an h1, if not, no TOC for you*/
        {
          var tocbox=$('<div class="tocbox pad"></div>');
-         var toc=$('<div id="toc"></div>');
          var hide = $('<div class="tochead">Contents [<a href="#">Hide</a>]</div>');
          var show = $('<div class="tochead">Contents [<a href="#">Show</a>]</div>');
 
