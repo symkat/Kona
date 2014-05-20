@@ -17,7 +17,8 @@ sub new {
        
         for my $candidate ( @$dispatch_table ) {
             if ( $req->request_uri =~ $candidate->{url} ) {
-                if ( exists $candidate->{package} and my $this = "$candidate->{package}"->can( $method ) ) {
+                if ( ( !exists $candidate->{test} or exists $candidate->{test} and $candidate->{test}->($req) )
+                   and exists $candidate->{package} and my $this = "$candidate->{package}"->can( $method ) ) {
                     # Get Object
                     my $Obj = $cache{$candidate->{package}} ||= $candidate->{package}->new( 
                         schema => $Site::heap{schema}, 
